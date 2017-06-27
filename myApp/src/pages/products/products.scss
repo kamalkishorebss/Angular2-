@@ -1,0 +1,98 @@
+page-products {
+
+}
+
+/*.href a {
+    color: #FFFFFF;
+    padding: 0px;
+    margin: 0 5px;
+    font-size: small;
+}
+.href {
+    text-align: center;
+    padding: 10px;
+}
+.first-row{
+    float:left;
+    width: 100%;
+    padding: 0 15px; 
+    cursor:pointer;
+}
+.left-page{
+  float: left;
+  width: 50%;
+  margin-top:20px; 
+}
+.mid-page{
+ float: left;
+ width: 60%;
+ padding: 15px;
+}
+.right-page{
+ float: right;
+ width: 20%;
+ padding: 15px;
+}
+.add {
+    color: #FFFFFF;
+    background-color: #343434;
+    font-size: 16px;
+}
+.info{
+  width:100%;
+}
+.cart-button {
+    margin-top: 30px;
+}
+.name{
+  font-weight:500;
+  text-transform:uppercase;	
+}
+img.product-image {
+    height: 70px;
+}*/
+
+
+
+
+.sub-header .href {
+    background-color: #498aff;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+
+.first-row {
+    float: left;
+    width: 50%;
+    padding:15px;
+    cursor:pointer;
+    box-shadow: 0 0 2px #ccc;
+    box-sizing: border-box; 
+}
+
+.pro-div{
+  float:left;
+  width:100%;
+  text-align:center;
+  
+}
+
+.left-page{
+  text-align:center;   
+}
+.info{
+  width:100%;
+}
+.name.info {
+    text-align: left;
+    font-size: smaller;
+}
+.Code.info {
+    text-align: left;
+    font-size: small;
+}
+.Price.info {
+    text-align: left;
+    font-size: small;
+}

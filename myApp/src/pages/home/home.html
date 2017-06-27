@@ -1,0 +1,83 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Shop Now</ion-title>
+     <ion-buttons right>
+        <button ion-button icon-only>
+          <ion-icon ios="ios-search" md="md-search"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+      <ion-slides pager="true" parallax="true" style="max-height:150px;">
+          <ion-slide *ngFor="let b of banner" class="home-banner" >
+            <img [src]="b" >
+          </ion-slide>
+      </ion-slides>  
+        
+       
+       <div class="brand-list">
+         <div class="top-brands titles"><p>Top Brands</p></div>
+       	  <div class="col-md-3 brand" *ngFor="let brand of brands;">           
+           <img src="http://localhost:9999/public/brandimage/{{brand.file}}" width="50" height="50"/>   
+           <p style="font-size:smaller;">{{brand.name}}</p>            
+          </div>
+       </div>
+        
+       <div class="product-list">
+          <div class="top-product titles"><p>Most Viewed Product</p></div>
+	          <div class="col-md-4 product" *ngFor="let product of products | slice:0:6 let i='index'">  
+	           <img src="http://localhost:9999/{{product.path[0]}}" width="70" height="75"/>   
+	           <p>{{product.name}}</p>            
+	          </div>
+       </div> 
+
+       <div class="category-list">
+          <div class="top-category titles"><p>Categories</p></div>
+	          <div class="col-md-3 Category" *ngFor="let cat of Categories | slice:0:4 let i='index'">           
+	           <img src="{{cat.path}}" width="50" height="50"/>   
+	           <p>{{cat.name}}</p>            
+	          </div>
+       </div>    
+     
+
+      
+
+      <ion-card>
+      </ion-card>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="primary">
+
+    <ion-buttons left>
+        <button ion-button icon-only>
+          <ion-icon ios="ios-home" md="md-home"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-title>
+      <ion-buttons>
+        <button ion-button icon-only>
+          <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-title>   
+    <ion-buttons right>
+      <button ion-button icon-only (click)="compass()">
+         <ion-icon ios="ios-compass" md="md-compass"></ion-icon>
+      </button>      
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-footer>

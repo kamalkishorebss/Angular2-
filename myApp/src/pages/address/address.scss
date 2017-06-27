@@ -1,0 +1,37 @@
+page-address {
+
+}
+form.address-form {
+    margin: 10px 10px 0 0px;
+    padding: 10px;
+}
+.address-page {
+    text-align: center;    
+}
+
+.address_title {
+    font-size: 18px;
+    color: #FC4A64;
+    margin-top: 10px;
+}
+
+input{
+    margin: 0 10px;
+    font: inherit;
+    color: inherit;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    outline: 0;
+}
+
+button.con-btn {
+    background-color: #fc4a64;
+    color: #ffffff;
+    border: none;
+    width: 150px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,54 @@
+<!--
+  Generated template for the Signup page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content>
+   <div class="signup-page">
+        <div class="title">GOOFFRR
+        </div>	    
+        
+        <form  class="signup-form">
+            <div class="log-form Username">
+                <label for="username" class="for-username">
+                <i class="glyphicon glyphicon-user" style="font-size:24px;"></i>
+                </label>
+                <input type="text" name="username"  placeholder="Username" 
+                [(ngModel)]="username">
+            </div>
+            <div class="log-form Email">
+                <label for="email" class="for-email">
+                <i class="glyphicon glyphicon-envelope" style="font-size:24px;"></i>
+                </label>
+                <input type="email" name="email"  placeholder="Email" 
+                [(ngModel)]="email">
+            </div>
+            <div class="log-form password">
+                <label for="key" class="for-password">
+                <i class="glyphicon glyphicon-lock" style="font-size:24px;"></i>
+                </label>
+                <input type="password" name="password"  placeholder="Password" 
+                [(ngModel)]="password">
+            </div>           
+            <div class="action">
+            	<button class="log-btn" (click)="account()">
+	            SignUp
+	           </button>  
+            </div>
+        </form>
+        
+        <div class="sep">
+            <span class="or">OR</span>
+        </div>
+
+        <div class="forgot">
+        	<a href="" style="color:#fc4a64">SignUp Facebook</a>
+        </div>        
+                    	   
+    </div>        
+
+</ion-content>

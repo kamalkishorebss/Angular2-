@@ -1,0 +1,55 @@
+<!--
+  Generated template for the AddressPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Shipping Address</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+   <div class="address-page">
+        <div class="address_title">Select Your Delivery Address
+        </div>       
+        <form class="address-form">
+              <div class="form-group">
+			    <label for="email">Username:</label>
+			    <input type="email" class="form-control" id="email">
+			  </div>
+			  <div class="form-group">
+			    <label for="mobile">Mobile number: </label>
+			    <input type="text" class="form-control" id="mobile">
+			  </div>
+			  <div class="form-group">
+			    <label for="pincode">Pincode: </label>
+			    <input type="text" class="form-control" id="pincode">
+			  </div>
+			  <div class="form-group">
+			    <label for="flat">Flat / House No. / Floor / Building: </label>
+			    <input type="text" class="form-control" id="flat">
+			  </div>
+			  <div class="form-group">
+			    <label for="colony">Colony / Street / Locality:</label>
+			    <input type="text" class="form-control" id="colony">
+			  </div>
+			  <div class="form-group">
+			    <label for="town">Town/City:</label>
+			    <input type="text" class="form-control" id="town">
+			  </div> 		  		  
+              <div class="form-group">
+			    <label for="state">State:</label>
+			    <input type="text" class="form-control" id="state">
+			  </div>
+        	  <button class="con-btn" (click)="account()">
+               Continue
+              </button>            
+        </form>         
+                    	   
+    </div> 
+</ion-content>

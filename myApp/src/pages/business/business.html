@@ -1,0 +1,51 @@
+<!--
+  Generated template for the BusinessPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Business</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+ <ion-searchbar [(ngModel)]="userFilter.location"></ion-searchbar>
+  <ion-card *ngFor="let user of users | filterBy: userFilter" (click)="BusDetail();">
+    <ion-item>
+        <ion-avatar item-left>
+          <img src="http://localhost:9999/public/businessuser/{{user.file}}" />
+        </ion-avatar>
+        <p>{{user.firstname |uppercase}} {{user.lastname |uppercase}}</p>        
+        <p>{{user.location | lowercase}}</p>
+      </ion-item>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+
+    <ion-buttons left>
+        <button ion-button icon-only (click)="home()">
+          <ion-icon ios="ios-home" md="md-home"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-title>
+      <ion-buttons>
+        <button ion-button icon-only>
+          <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-title>   
+    <ion-buttons right>
+      <button ion-button icon-only (click)="openPopover()">
+           <ion-icon ios="ios-options" md="md-options"></ion-icon>
+      </button>      
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-footer>

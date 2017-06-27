@@ -1,0 +1,53 @@
+page-category {
+
+}
+.custom-dark{
+    background-color : #000000 !important;
+}
+.title {
+    font-size: 36px;
+    color: #FC4A64;
+    text-align: center;
+}
+.shop-logo {
+    text-align: center;
+    padding: 40px 40px;
+}
+.bannner-part{
+	background-image: url("/img/banner-bg.jpg");
+}
+.image-text {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.shop-logo img {
+    vertical-align: middle;
+    width: 80px;
+}
+.category-container .cat { 
+  float: left;
+  margin: 0 10px;
+  text-align: center;
+  width: 29.88%;
+}
+.category-container {
+  float: left;
+  padding: 15px 15px;
+  width: 100%;
+}
+h3.img-text
+{
+	text-align:center;
+	font-size: 10px;
+  color:#FC4A64;
+}
+.col-sm-4 {
+    float: left;
+    padding: 0 10px 0;
+    width: 33.3333%;
+}
+.cat-img {
+    cursor: pointer;
+}

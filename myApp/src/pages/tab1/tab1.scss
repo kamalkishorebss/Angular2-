@@ -1,0 +1,70 @@
+page-tab1 {
+
+}
+.business-add {
+    float: left;
+    width: 100%;
+    padding: 5px;
+    background-color: #eae5e5;
+}
+.business-add p {
+    margin: 0 0 0px;
+    padding: 5px;
+}
+
+.business-name {
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+.business-name p{
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+p#name {
+    padding: 0px;
+    margin: 0px;
+    font-size: small;
+    font-family: serif;
+}
+
+.first-row {
+    float: left;
+    width: 50%;
+    padding:15px;
+    cursor:pointer;
+    box-shadow: 0 0 1px #ccc;
+    box-sizing: border-box; 
+}
+
+.pro-div{
+  float:left;
+  width:100%;
+  text-align:center;
+  
+}
+.pro-detail {
+    margin-top: 10px;
+}
+
+.left-page{
+  text-align:center;   
+}
+.info{
+  width:100%;
+}
+.name.info {
+    text-align: left;
+    font-size: smaller;
+}
+.Code.info {
+    text-align: left;
+    font-size: small;
+}
+.Price.info {
+    text-align: left;
+    font-size: small;
+}
+

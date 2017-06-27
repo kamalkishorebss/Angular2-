@@ -1,0 +1,282 @@
+<!--
+  Generated template for the BusinessdetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Grocery</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+  <ion-content>
+    <div padding>
+      <ion-segment [(ngModel)]="cat">
+        <ion-segment-button value="detail">
+          Detail
+        </ion-segment-button>
+        <ion-segment-button value="chat">
+          Chat
+        </ion-segment-button>
+        <ion-segment-button value="mylist">
+          My Cart
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+
+    <div [ngSwitch]="cat">
+        <div *ngSwitchCase="'detail'"><!-- detail segment --> 
+              <ion-card>
+                 <ion-item>
+                      <ion-avatar item-left>
+                        <img src="../img/mono-1.1.png" />
+                      </ion-avatar>
+                      <p style="text-align:left; color:#000000;">Grocery</p>        
+                      <p style="text-align:left;">Palvinder Singh</p>
+                 </ion-item>
+                 <img src="../img/banner-bg.jpg" />
+                 <ion-card-content>
+                      <strong>Address: </strong>
+                      E-51-First Floor, Phase VIII, Industrial Area, SAS Nagar, Sahibzada Ajit Singh Nagar, Punjab 160059
+                  </ion-card-content>
+              </ion-card>
+
+              <ion-card>
+              <div class="Pro_title">
+                <p style="float:left;color: #fff;margin: 9px; font-size:17px;">Product List</p>
+                <p style="float:right; text-align:right; margin: 10px;color:#fff;cursor: pointer;" (click)="finding();"><span class="glyphicon glyphicon-search"></span></p>
+                
+                
+                <ion-searchbar [(ngModel)]="prod.name" *ngIf="find"></ion-searchbar>
+              </div>
+                  <div class="product-list">
+                  <div class="col-sm-6 first-row" *ngFor="let product of products | filterBy: prod" (click)="view(product.objectId);">
+                    <div class="pro-div">
+                        <div class="left-page">
+                          <img src="http://localhost:9999/{{product.path[0]}}"  class="product-image" width="80" height="90">
+                        </div>
+
+                        <div class="pro-detail">
+                                <div class="name info"><b>{{product.name}}</b></div>
+                                
+                                <div class="Price info" style="color:#FC4A64;">Rs. {{product.price}}</div>  
+                        </div>
+                    </div>
+
+                  </div>
+                       
+                </div>      
+              </ion-card>          
+      </div>                <!-- detail ends -->
+      <div *ngSwitchCase="'chat'"> <!-- chat box-->
+         fgfgf
+      </div>                       <!--chat box end  -->
+
+      <div *ngSwitchCase="'mylist'">  <!--My Card  -->
+          <ion-card>
+           <div class="cartList">
+             <div class="cartItem">
+               <ion-avatar>
+               <img src="../img/gxf2tG3WvOMd-NP_TKEPFzr4.png">
+               </ion-avatar>
+             </div>
+             <div class="itemDetail">
+               <h2 style="color:#000000;">Fanta</h2>              
+               <p style="width:100%;float: right; text-align: right; color: orange;margin-right:22px !important;">$200</p>
+               
+               <div class="rangeSlider">
+                   <div class="left_button">
+                     <button ion-button outline (click)="qtyDcr()">
+                     <ion-icon range-left ios="ios-remove" md="md-remove"></ion-icon>
+                     </button>
+                   </div>
+                   <div class="mid-text"><span>{{q}}</span></div>
+                   <div class="right_button" >
+                     <button ion-button outline (click)="qtyInc()">
+                      <ion-icon range-left ios="ios-add" md="md-add"></ion-icon>
+                     </button>
+                   </div>             
+               </div>               
+             </div>
+           </div>
+          </ion-card> 
+          <ion-card>
+           <div class="cartList">
+             <div class="cartItem">
+               <ion-avatar>
+               <img src="../img/gxf2tG3WvOMd-NP_TKEPFzr4.png">
+               </ion-avatar>
+             </div>
+             <div class="itemDetail">
+               <h2 style="color:#000000;">Fanta</h2>              
+               <p style="width:100%;float: right; text-align: right; color: orange;margin-right:22px !important;">$200</p>
+               
+               <div class="rangeSlider">
+                   <div class="left_button">
+                     <button ion-button outline (click)="qtyDcr()">
+                     <ion-icon range-left ios="ios-remove" md="md-remove"></ion-icon>
+                     </button>
+                   </div>
+                   <div class="mid-text"><span>{{q}}</span></div>
+                   <div class="right_button" >
+                     <button ion-button outline (click)="qtyInc()">
+                      <ion-icon range-left ios="ios-add" md="md-add"></ion-icon>
+                     </button>
+                   </div>             
+               </div>               
+             </div>
+           </div>
+          </ion-card> 
+          <ion-card>
+           <div class="cartList">
+             <div class="cartItem">
+               <ion-avatar>
+               <img src="../img/gxf2tG3WvOMd-NP_TKEPFzr4.png">
+               </ion-avatar>
+             </div>
+             <div class="itemDetail">
+               <h2 style="color:#000000;">Fanta</h2>              
+               <p style="width:100%;float: right; text-align: right; color: orange;margin-right:22px !important;">$200</p>
+               
+               <div class="rangeSlider">
+                   <div class="left_button">
+                     <button ion-button outline (click)="qtyDcr()">
+                     <ion-icon range-left ios="ios-remove" md="md-remove"></ion-icon>
+                     </button>
+                   </div>
+                   <div class="mid-text"><span>{{q}}</span></div>
+                   <div class="right_button" >
+                     <button ion-button outline (click)="qtyInc()">
+                      <ion-icon range-left ios="ios-add" md="md-add"></ion-icon>
+                     </button>
+                   </div>             
+               </div>               
+             </div>
+           </div>
+          </ion-card> 
+          <ion-card>
+           <div class="cartList">
+             <div class="cartItem">
+               <ion-avatar>
+               <img src="../img/gxf2tG3WvOMd-NP_TKEPFzr4.png">
+               </ion-avatar>
+             </div>
+             <div class="itemDetail">
+               <h2 style="color:#000000;">Fanta</h2>              
+               <p style="width:100%;float: right; text-align: right; color: orange;margin-right:22px !important;">$200</p>
+               
+               <div class="rangeSlider">
+                   <div class="left_button">
+                     <button ion-button outline (click)="qtyDcr()">
+                     <ion-icon range-left ios="ios-remove" md="md-remove"></ion-icon>
+                     </button>
+                   </div>
+                   <div class="mid-text"><span>{{q}}</span></div>
+                   <div class="right_button" >
+                     <button ion-button outline (click)="qtyInc()">
+                      <ion-icon range-left ios="ios-add" md="md-add"></ion-icon>
+                     </button>
+                   </div>             
+               </div>               
+             </div>
+           </div>
+          </ion-card> 
+          <ion-card>
+           <div class="cartList">
+             <div class="cartItem">
+               <ion-avatar>
+               <img src="../img/gxf2tG3WvOMd-NP_TKEPFzr4.png">
+               </ion-avatar>
+             </div>
+             <div class="itemDetail">
+               <h2 style="color:#000000;">Fanta</h2>              
+               <p style="width:100%;float: right; text-align: right; color: orange;margin-right:22px !important;">$200</p>
+               
+               <div class="rangeSlider">
+                   <div class="left_button">
+                     <button ion-button outline (click)="qtyDcr()">
+                     <ion-icon range-left ios="ios-remove" md="md-remove"></ion-icon>
+                     </button>
+                   </div>
+                   <div class="mid-text"><span>{{q}}</span></div>
+                   <div class="right_button" >
+                     <button ion-button outline (click)="qtyInc()">
+                      <ion-icon range-left ios="ios-add" md="md-add"></ion-icon>
+                     </button>
+                   </div>             
+               </div>               
+             </div>
+           </div>
+          </ion-card> 
+          <ion-card>
+           <div class="cartList">
+             <div class="cartItem">
+               <ion-avatar>
+               <img src="../img/gxf2tG3WvOMd-NP_TKEPFzr4.png">
+               </ion-avatar>
+             </div>
+             <div class="itemDetail">
+               <h2 style="color:#000000;">Fanta</h2>              
+               <p style="width:100%;float: right; text-align: left; color: orange;">$200</p>
+               
+               <div class="rangeSlider">
+                   <div class="left_button">
+                     <button ion-button outline (click)="qtyDcr()">
+                     <ion-icon range-left ios="ios-remove" md="md-remove"></ion-icon>
+                     </button>
+                   </div>
+                   <div class="mid-text"><span>{{q}}</span></div>
+                   <div class="right_button" >
+                     <button ion-button outline (click)="qtyInc()">
+                      <ion-icon range-left ios="ios-add" md="md-add"></ion-icon>
+                     </button>
+                   </div>             
+               </div>               
+             </div>
+           </div>
+          </ion-card>
+          <div class="Checkout-total">
+            <div class="ur-total">Total</div>
+            <div class="ur-price">$1000</div>
+          </div> 
+          <ion-toolbar>
+             <ion-title>
+              <button ion-button outline (click)="checkout()">Checkout</button>
+             </ion-title>
+          </ion-toolbar>
+          
+          
+          
+      </div>                          <!--My Card Ends -->
+
+    </div> 
+  </ion-content>  
+    
+    
+
+
+ <ion-footer>
+  <ion-toolbar color="primary">
+
+    <ion-buttons left>
+        <button ion-button icon-only>
+          <ion-icon ios="ios-home" md="md-home"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-title>
+      <ion-buttons>
+        <button ion-button icon-only>
+          <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-title>   
+    <ion-buttons right>
+      <button ion-button icon-only>
+         <ion-icon ios="ios-options" md="md-options"></ion-icon>
+      </button>      
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-footer>

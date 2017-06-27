@@ -1,0 +1,66 @@
+page-signup {
+
+}
+.login-page {
+    text-align: center;
+    padding: 16px;
+    margin: 30px 0;
+}
+.title {
+    font-size: 36px;
+    color: #FC4A64;
+}
+.log-form {
+    padding: 5px 0;
+    margin: 14px;
+}
+.sep {
+        border: 1px solid #000;
+        position: relative;
+        margin: 35px 20px;
+        border-block-start: 1px none;
+    }
+.or {
+        position: absolute;
+        width: 50px;
+        left: 50%;
+        background: #ffffff none repeat scroll 0 0;
+        text-align: center;
+        margin: -10px 0 0 -25px;
+        line-height: 20px;
+    }
+button.log-btn {
+    background-color: #fc4a64;
+    color: #ffffff;
+    border: none;
+    width: 150px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+form.login-form {
+    margin: 50px 0;
+}
+.forgot {
+    padding: 0px 0 5px;
+    margin: 10px 0 20px;
+}
+.account {
+    padding: 5px;
+    margin: 15px;
+}
+
+input{
+    margin: 0 10px;
+    font: inherit;
+    color: inherit;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    outline: 0;
+}
+a {
+    text-decoration: none !important;
+}
